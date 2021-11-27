@@ -7,5 +7,5 @@
     // },
     // "javascript.validate.enable": false,
     // "typescript.validate.enable": false,
-    // "editor.fontSize": 16,
+    "editor.fontSize": 16,
 }

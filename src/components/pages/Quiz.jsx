@@ -41,6 +41,10 @@ export default function Quiz() {
 
   const history = useHistory();
 
+  const { location } = history;
+  const { state } = location;
+  const { videoTitle } = state;
+
   useEffect(() => {
     dispatch({
       type: "questions",
@@ -107,7 +111,7 @@ export default function Quiz() {
             progress={progressPercentage}
             submit={handleSubmit}
           />
-          <MiniPlayer />
+          <MiniPlayer id={id} title={videoTitle} />
         </>
       )}
     </>
